@@ -1,0 +1,81 @@
+html, body {
+    background: #1488CC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+  
+  body {
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .app {
+    max-width: 800px;
+    background: transparent;
+    border-radius: 30px;
+  }
+  
+  .app form {
+    border:0;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-auto-rows: 1fr;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 600;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    grid-gap:2rem;
+    align-items: stretch; 
+    border-radius: 30px;
+
+  }
+  
+  
+  .app :is(button, input, select, textarea) {
+    margin:0;
+    text-align: center;
+    /* font-weight: 600; */
+    border:0;
+    font-size: 25px;
+    border-radius: 30px;
+  }
+  
+  .app :is(button, input, select, textarea):focus {
+    outline-color: grey;
+    border-radius: 30px;
+
+  }
+  
+  .app input {
+    width: 250px;
+    border-radius: 30px;
+  }
+  
+  .app select {
+    border:0;
+    padding: 2rem;
+    border-radius: 30px;
+  }
+  
+  .app form > * {
+    margin: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+    display: grid;
+    align-content: center;
+    background: #FFFFFF;
+    font-size: 25px;
+    font-family: 'Patua One';
+    letter-spacing: 2px;
+    border-radius: 30px;
+    color: #141823;
+  }
+
+  select {
+      background: pink;
+  }
+
