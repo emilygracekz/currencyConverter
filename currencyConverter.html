@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Converter</title>
     <link rel="stylesheet" href="currencyConverter.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 </head>
 
 <body>
+    <div class="header">
+        <h2>Real time</h2>
+        <h1>Currency converter.</h1>
+    </div>
     <div class="app">
         <form>
-            <input type="number" name="from_amount">
+            <input type="number" name="from_amount" placeholder="0">
             <select name="from_currency">
                 <option>Select a Currency</option>
             </select>
@@ -26,4 +31,5 @@
     </div>
     <script src="currencyConverter.js"></script>
 </body>
+
 </html>
